@@ -1,0 +1,33 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+
+public class project {
+
+    public static void main(String[] args) {
+        Scanner scn=new Scanner(System.in);
+        int boyut;
+        System.out.print("Dizinin boyutunu giriniz :");
+        int[] list= new int[scn.nextInt()];
+
+
+        int sayi;
+
+        for(int i=0; i< list.length;i++){
+
+            System.out.print(i+1+".Eleman :");
+          list[i]=scn.nextInt();
+
+        }
+Arrays.sort(list);
+
+           System.out.println(Arrays.toString(list));
+       }
+
+
+    }
+
+
+
+
+
